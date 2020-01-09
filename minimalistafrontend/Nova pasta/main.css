@@ -92,12 +92,11 @@ section{
 }
 
 .image-banner{
-    background-image: url("./portfoliominimalista.jpg");
+    background-image: url("./background-body.jpg");
     position: relative;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
-    filter: grayscale(55%);
    
 
 }
@@ -151,9 +150,7 @@ section{
 .story-descrip p,
 .portfolio-descrip p{
     padding: 10px 0px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    justify-content: space-between;
+    font-size: 20px;
 }
 
 
@@ -182,9 +179,9 @@ section{
     
 }
 
-@media (min-width: 576px){
+@media (max-width: 576px){
     .container-prog{
-        padding-top: 30%;
+        padding-top: 25%;
         display: flex;
         
     }
@@ -208,62 +205,34 @@ section{
 }
 
 
-@media (min-width: 780px){
-    .container-prog{
-        padding-top: 30%;
-        display: flex;
-        
+
+@media (max-width: 1024px){
+    .story,
+    .portfolio{
+        flex-direction: column;
+    }
+    .story-descrip, .portfolio-descrip{
+        width: 100%;
     }
 
-    .programmer h1 {
-        font-size: 35px;
+    .portfolio-gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .programmer{
+        padding-top: 50%;
         text-align: center;
+    }
+   
 
-
+    .container-prog{
+    
+        display: flex;
     }
 
-    .programmer h3{
-        font-size: 20px;
-        line-height: 10px;
 
 
-    }
 
     
-
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1024px){
-    .container-prog{
-        padding-top: 30%;
-        display: flex;
-        
-    }
-
-    .programmer h1 {
-        font-size: 40px;
-        text-align: center;
-
-
-    }
-
-    .programmer h3{
-        font-size: 20px;
-        line-height: 15px;
-
-
-    }
-
-    
-
 }
