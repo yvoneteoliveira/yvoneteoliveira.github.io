@@ -1,0 +1,321 @@
+*{
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in 0.5s;
+
+}
+
+body.night{
+    background-color: #00151f;
+    color: antiquewhite;
+
+}
+
+
+.toggle {
+    position: absolute;
+    top:30px;
+    right: 45%;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 50px;
+    height: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 20%;
+
+}
+
+
+
+
+.toggle:before{
+    content: ' ';
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    background: #00151f;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+
+
+}
+
+.toggle.active {
+    background-color: #00151f;
+    border: 2px solid #fff;
+}
+
+
+.toggle.active:before{
+    left: 30px ;
+    background-color: #fff;
+
+}
+
+header{
+    display: flex;
+    height: 10vh;
+    flex: 1;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+
+
+.logo{
+    flex: 1;
+    font-size: 1.5rem;
+
+}
+
+.logo ul{
+    list-style: none;
+}
+
+a.logo{
+    text-decoration: none;
+    color: gray;
+}
+
+
+
+
+
+.nav{
+    flex: 2;
+
+
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: gray;
+    margin-right: 10px;
+    font-size: 1.4rem;
+
+}
+
+
+.section-one{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.intro{
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 1.6rem;
+}
+
+
+.cta button{
+    padding: 10px 45px;
+    background-color: transparent;
+    border: 1px solid #E6C2DF;
+    border-radius: 14px;
+    color: gray;
+    font-size: 1.1rem;
+    cursor: pointer;
+   
+
+
+}
+.developer{
+    flex:1;
+    margin-top: 5%;
+}
+
+.developer img{
+    height: 80vh;
+}
+
+
+.social-media{
+    width: 40%;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    left: 50%;
+    transform: translate(50%, 5%);
+}
+
+.social-media img{
+    width: 20px;
+    margin: auto;
+    margin-right: 20px;
+
+}
+
+
+.box-benefits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.item-benef{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 300px;
+   height: auto;
+   margin: 20px;
+   color: #707070;
+}
+.item-benef img{
+    width: 40px;
+    height: 60px;
+
+}
+
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5%;
+
+}
+
+
+.image-about img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 40%;
+    padding: 5px;
+
+
+}
+
+.text-about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    margin: 20px;
+}
+
+.text-about h3{
+    font-size: 1.3rem;
+    margin-bottom: 10%;
+    margin-left:55%;
+    width: 80%;
+    color: #707070;
+
+
+}
+
+.text-about p{
+    width: 80%;
+    font-size: 1.1rem;
+    color: #707070;
+    
+
+}
+
+.skill{
+    float: right;
+    margin-right: 5%;
+}
+
+.skill h3{
+    color: gray;
+    font-size: 1.3rem;
+    float: right;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .section-one{
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .social-media {
+        opacity: 0;
+    }
+
+
+
+    .developer {
+        margin-top: 5%;
+    }
+    .intro{
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 1.6rem;
+        opacity: 0.7;
+    }
+
+    .box-benefits{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; 
+   }
+
+
+   .item-benef{
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       width: 300px;
+       height: auto;
+       margin: 20px
+   }
+    .item-benef img{
+        width: 40px;
+        height: 60px;
+
+    }
+
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+        
+
+}
+
